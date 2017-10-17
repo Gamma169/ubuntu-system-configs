@@ -7,6 +7,7 @@ A set of system configurations for my ubuntu development environment
   * tree:   `sudo apt install tree`
   * curl:   `sudo apt install curl`
   * fortune:`sudo apt install fortune` 
+  * go:     `sudo apt install golang-go`
 
 
 ### Install things
