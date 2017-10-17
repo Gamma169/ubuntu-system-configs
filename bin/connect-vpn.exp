@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+
+
+spawn sudo "openvpn" --config /home/rienzi/bin/client.ovpn
+
+interact \r return
+ 
+send "\r" 
+
+expect "Enter Auth Username: "
+
+send "rienzi@peeriq.com\r"
+
+expect "Password: "
+
+send "6Gyv8y1XpUBP\r"
+
+interact
