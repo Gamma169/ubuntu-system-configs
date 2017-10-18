@@ -11,5 +11,11 @@ A set of system configurations for my ubuntu development environment
 
 
 ### Install things
-  *  Docker: `sudo apt-get install docker` then https://docs.docker.com/engine/installation/linux/linux-postinstall/#manage-docker-as-a-non-root-user
-  *  Node:  http://www.hostingadvice.com/how-to/install-nodejs-ubuntu-14-04/#node-version-manager  Use the nvm version
+  *  **Docker:** `sudo apt-get install docker` then https://docs.docker.com/engine/installation/linux/linux-postinstall/#manage-docker-as-a-non-root-user
+  *  **Node:**  http://www.hostingadvice.com/how-to/install-nodejs-ubuntu-14-04/#node-version-manager  Use the nvm version
+  *  **Yarn:** 
+  `sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg`
+  `echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+  `sudo apt-get update -qq`
+  `sudo apt-get install -y -qq yarn`
+  
