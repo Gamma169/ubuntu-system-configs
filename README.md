@@ -8,7 +8,7 @@ A set of system configurations for my ubuntu development environment
   * curl:   `sudo apt install curl`
   * fortune:`sudo apt install fortune` 
   * go:     `sudo apt install golang-go`
-
+      * If that doesn't work:  https://golang.org/doc/install?download=go1.9.2.linux-amd64.tar.gz
 
 ### Install things
   *  **Chrome:** https://askubuntu.com/questions/79280/how-to-install-chrome-browser-properly-via-command-line
