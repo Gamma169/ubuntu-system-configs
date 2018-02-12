@@ -120,4 +120,13 @@ export PATH=$PATH:/home/$USER/bin:/usr/lib/go-1.8/bin
 export NVM_DIR="/home/rienzi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-fortune | lolcat
+
+# Display your fortune only once a day
+last_fortune=$(stat /home/$USER/bin/loggedin | grep Change | cut -c 8-18)
+todate=$(date '+%Y-%m-%d')
+if [ $last_fortune \< $todate ]
+then
+    fortune | lolcat
+fi  
+touch /home/$USER/bin/loggedin
+

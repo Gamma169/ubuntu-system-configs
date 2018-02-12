@@ -15,7 +15,7 @@ A set of system configurations for my ubuntu development environment
       * `sudo apt-get install libxss1 libappindicator1 libindicator7`
       * `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
       * `sudo dpkg -i google-chrome*.deb`
-      *  Then download postman app
+
   *  **Docker:** https://docs.docker.com/engine/installation/linux/linux-postinstall/#manage-docker-as-a-non-root-user
       * `sudo apt-get install docker`
       * `sudo apt-get install docker.io`
@@ -45,7 +45,14 @@ A set of system configurations for my ubuntu development environment
       * `sudo apt-get install sbt`
       * Also Need Java
       * `sudo apt-get install default-jdk`
-    
+
+  *  **Postman**  https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/
+      * `wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz`
+      * `sudo tar -xzf postman.tar.gz -C /opt`
+      * `rm postman.tar.gz`
+      * `sudo ln -s /opt/Postman/Postman /usr/bin/postman`
+      * Then run `postman` in command line and lock to launcher
+
   
   
 ### Add New Github Private Key
