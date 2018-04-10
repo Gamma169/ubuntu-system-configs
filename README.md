@@ -53,6 +53,17 @@ A set of system configurations for my ubuntu development environment
       * `sudo ln -s /opt/Postman/Postman /usr/bin/postman`
       * Then run `postman` in command line and lock to launcher
 
+  *  **Ember**  https://guides.emberjs.com/v3.0.0/getting-started/
+      * First install watchman:  https://facebook.github.io/watchman/docs/install.html
+      * `git clone https://github.com/facebook/watchman.git`
+      * `cd watchman`
+      * `git checkout v4.9.0`
+      * `./autogen.sh`
+        * If libtool error: `sudo apt-get install libtool m4 automake`
+      * `./configure`
+      * `make`
+      * `sudo make install`
+      * Then yarn-install ember: `npm install -g ember-cli@3.0`
   
   
 ### Add New Github Private Key
