@@ -7,8 +7,6 @@ A set of system configurations for my ubuntu development environment
   * tree:   `sudo apt install tree`
   * curl:   `sudo apt install curl`
   * fortune:`sudo apt install fortune` 
-  * go:     `sudo apt install golang-go`
-      * If that doesn't work:  https://golang.org/doc/install?download=go1.9.2.linux-amd64.tar.gz
 
 ### Install things
   *  **Chrome:** https://askubuntu.com/questions/79280/how-to-install-chrome-browser-properly-via-command-line
@@ -65,6 +63,19 @@ A set of system configurations for my ubuntu development environment
       * `sudo make install`
       * Then yarn-install ember: `npm install -g ember-cli@3.0`
   
+  * **Golang**  https://golang.org/doc/install
+      * Download .tar.gz somewhere - https://golang.org/dl/
+      * `tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz`
+      * `export PATH=$PATH:/usr/local/go/bin`
+
+
+  * **Google Cloud SDK + kubectl**  https://cloud.google.com/sdk/docs/downloads-apt-get
+      * `export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"`
+      * `echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list`
+      * `curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -`
+      * `sudo apt-get update && sudo apt-get install google-cloud-sdk`
+      * `gcloud components install kubectl` or `sudo apt-get install kubectl`
+
   
 ### Add New Github Private Key
   * https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
