@@ -24,6 +24,12 @@ A set of system configurations for my ubuntu development environment
       * `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash`
       * `nvm install 8.7.0`  (Or whatever versions you need)
       * To Get it properly on the system-- Not use nvm https://www.geeksforgeeks.org/installation-of-node-js-on-linux/
+        * `sudo apt-get update`
+        * `sudo apt-get upgrade`
+        * `sudo apt-get install python-software-properties`
+        * `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` -- Change _12 to the version necessary
+        * **NOTE** I got an error saying one of the packages was forbidden and this wouldn't let the above command run to completion.  So I had to comment out that package and try it again: https://dev.to/deepika_banoth/how-i-solved-failed-to-fetch-http-ppa-launchpad-net-403-forbidden-2544
+        * `sudo apt-get install nodejs`
   
   *  **Yarn:** 
       * `sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg`
