@@ -23,6 +23,7 @@ A set of system configurations for my ubuntu development environment
       * `sudo apt-get install build-essential checkinstall`
       * `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash`
       * `nvm install 8.7.0`  (Or whatever versions you need)
+      * To Get it properly on the system-- Not use nvm https://www.geeksforgeeks.org/installation-of-node-js-on-linux/
   
   *  **Yarn:** 
       * `sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg`
