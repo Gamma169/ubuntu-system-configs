@@ -18,6 +18,7 @@ A set of system configurations for my ubuntu development environment
       * `sudo apt-get install docker`
       * `sudo apt-get install docker.io`
       * `sudo usermod -aG docker $USER`
+      * Restart the computer so you don't have to use sudo
     
   *  **Node:**  To Get it properly on the system-- Not use nvm https://www.geeksforgeeks.org/installation-of-node-js-on-linux/
       * `sudo apt-get update`
