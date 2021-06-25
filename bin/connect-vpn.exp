@@ -13,6 +13,6 @@ send "rienzi@peeriq.com\r"
 
 expect "Password: "
 
-send "6Gyv8y1XpUBP\r"
+send "<pass>\r"
 
 interact
