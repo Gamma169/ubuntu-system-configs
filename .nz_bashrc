@@ -1,0 +1,10 @@
+
+# Display your fortune only once a day
+last_fortune=$(stat /home/$USER/bin/loggedin | grep Change | cut -c 8-18)
+todate=$(date '+%Y-%m-%d')
+if [ $last_fortune \< $todate ]
+then
+    fortune | lolcat
+fi  
+touch /home/$USER/bin/loggedin
+
