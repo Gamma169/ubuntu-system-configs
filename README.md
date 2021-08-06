@@ -24,7 +24,7 @@ A set of system configurations for my ubuntu development environment
       * `sudo apt-get update`
       * `sudo apt-get upgrade`
       * `sudo apt-get install python-software-properties`
-      * `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` -- Change _12 to the version necessary
+      * `curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -`
       * **NOTE** I got an error saying one of the packages was forbidden and this wouldn't let the above command run to completion.  So I had to comment out that package and try it again: https://dev.to/deepika_banoth/how-i-solved-failed-to-fetch-http-ppa-launchpad-net-403-forbidden-2544
       * `sudo apt-get install nodejs`
   
