@@ -12,3 +12,5 @@ __git_complete gco _git_checkout
 
 alias gpush="git push origin"
 __git_complete gpush _git_push
+
+alias gb="git branch"
