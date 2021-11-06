@@ -23,16 +23,15 @@ A set of system configurations for my ubuntu development environment
   *  **Node:**  To Get it properly on the system-- Not use nvm https://www.geeksforgeeks.org/installation-of-node-js-on-linux/
       * `sudo apt-get update`
       * `sudo apt-get upgrade`
-      * `sudo apt-get install python-software-properties`
+      * `sudo apt-get install software-properties-common`
       * `curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -`
       * **NOTE** I got an error saying one of the packages was forbidden and this wouldn't let the above command run to completion.  So I had to comment out that package and try it again: https://dev.to/deepika_banoth/how-i-solved-failed-to-fetch-http-ppa-launchpad-net-403-forbidden-2544
       * `sudo apt-get install nodejs`
   
   *  **Yarn:** 
-      * `sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg`
-      * `echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
-      * `sudo apt-get update -qq`
-      * `sudo apt-get install -y -qq yarn`
+      * `curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null`
+      * `echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+      * `sudo apt-get update && sudo apt-get install yarn`
   
   *  **Sublime Text**  http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/
       * `wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -`
