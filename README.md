@@ -56,13 +56,16 @@ A set of system configurations for my ubuntu development environment
 
   *  **Ember**  https://guides.emberjs.com/v3.0.0/getting-started/
       * First install watchman:  https://facebook.github.io/watchman/docs/install.html
-      * `git clone https://github.com/facebook/watchman.git`
+      * `git clone https://github.com/facebook/watchman.git -b v4.9.0 --depth 1`
       * `cd watchman`
-      * `git checkout v4.9.0`
       * `./autogen.sh`
-        * If libtool error: `sudo apt-get install libtool m4 automake`
+        * If libtool error: `sudo apt-get install libtool m4 make automake`
+        * Also possible g++ error: `sudo apt install g++`
       * `./configure`
       * `make`
+        * If ssl error: https://github.com/facebook/watchman/issues/529#issuecomment-329991884
+        * `sudo apt install libssl-dev`
+        * Manually changing the Makefile to have LIBS = `-lpthread -lssl -lcrypto`
       * `sudo make install`
       * Then yarn-install ember: `npm install -g ember-cli@3.0`
   
