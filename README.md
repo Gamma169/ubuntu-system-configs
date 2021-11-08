@@ -67,6 +67,7 @@ A set of system configurations for my ubuntu development environment
         * If ssl error: https://github.com/facebook/watchman/issues/529#issuecomment-329991884
         * `sudo apt install libssl-dev`
         * Manually changing the Makefile to have LIBS = `-lpthread -lssl -lcrypto`
+        * If python error `sudo apt install python3-dev`
       * `sudo make install`
       * Then yarn-install ember: `npm install -g ember-cli@3`
   
