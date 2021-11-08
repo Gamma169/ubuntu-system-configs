@@ -61,13 +61,14 @@ A set of system configurations for my ubuntu development environment
       * `./autogen.sh`
         * If libtool error: `sudo apt-get install libtool m4 make automake`
         * Also possible g++ error: `sudo apt install g++`
-      * `./configure`
+      * `./configure --enable-lenient`
+        * enable-lenient is from issue with make: https://github.com/facebook/watchman/issues/638#issuecomment-415583449
       * `make`
         * If ssl error: https://github.com/facebook/watchman/issues/529#issuecomment-329991884
         * `sudo apt install libssl-dev`
         * Manually changing the Makefile to have LIBS = `-lpthread -lssl -lcrypto`
       * `sudo make install`
-      * Then yarn-install ember: `npm install -g ember-cli@3.0`
+      * Then yarn-install ember: `npm install -g ember-cli@3`
   
   * **Golang**  https://golang.org/doc/install
       * Download .tar.gz somewhere - https://golang.org/dl/
