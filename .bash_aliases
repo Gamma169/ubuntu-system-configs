@@ -14,9 +14,12 @@ alias gpush="git push origin"
 __git_complete gpush _git_push
 
 alias gb="git branch"
+__git_complete gb _git_branch
 
 alias kubecontext="kubectl config get-contexts"
 alias kp="kubectl config use-context <prod>"
 alias kt="kubectl config use-context <test>"
 alias kpp="kp && kubectl proxy"
 alias ktp="kt && kubectl proxy"
+
+alias studio="studio.sh"
