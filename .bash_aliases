@@ -23,3 +23,6 @@ alias kpp="kp && kubectl proxy"
 alias ktp="kt && kubectl proxy"
 
 alias studio="studio.sh"
+
+alias n16="nvm use 16"
+alias n12="nvm use 12"
