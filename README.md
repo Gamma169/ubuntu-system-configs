@@ -90,3 +90,8 @@ A set of system configurations for my ubuntu development environment
     * First-  `ssh-keygen -t rsa -b 4096 -C "RGokea@gmail.com"`
     * Then-  `ssh-add ~/.ssh/id_rsa`
     * Finally- Go to github settings and add it after copying from id_rsa_pub file in .ssh
+
+### Sublime Keybindings
+Adding a new keyboard shortcut is very easy in Sublime just open Preferences > Key Binding and add new list with [] and type this in between in
+
+{ "keys": ["ctrl++shift+alt+s"], "command": "save_all"}
