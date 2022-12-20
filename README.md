@@ -94,4 +94,4 @@ A set of system configurations for my ubuntu development environment
 ### Sublime Keybindings
 Adding a new keyboard shortcut is very easy in Sublime just open Preferences > Key Binding and add new list with [] and type this in between in
 
-{ "keys": ["ctrl++shift+alt+s"], "command": "save_all"}
+{ "keys": ["ctrl+shift+alt+s"], "command": "save_all"}
