@@ -91,6 +91,9 @@ A set of system configurations for my ubuntu development environment
     * Then-  `ssh-add ~/.ssh/id_rsa`
     * Finally- Go to github settings and add it after copying from id_rsa_pub file in .ssh
 
+### Gmail Archive Script
+https://medium.com/@fw3d/auto-archive-emails-in-gmail-after-2-days-1ebf0e076b1c
+
 ### Sublime Keybindings
 Adding a new keyboard shortcut is very easy in Sublime just open Preferences > Key Binding and add new list with [] and type this in between in
 
